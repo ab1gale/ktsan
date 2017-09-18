@@ -18,6 +18,9 @@ static inline kt_cpu_t *kt_current_cpu(void)
 {
 	return this_cpu_ptr(kt_ctx.cpus);
 }
+void __tsan_init(void)
+{;
+}
 
 static inline kt_task_t *kt_current_task(void)
 {
