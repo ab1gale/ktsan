@@ -20,6 +20,8 @@ enum ktsan_memory_order_e {
 	ktsan_memory_order_acq_rel
 };
 
+void __tsan_init(void);
+
 typedef enum ktsan_memory_order_e ktsan_memory_order_t;
 
 enum ktsan_glob_sync_type_e {
